@@ -65,7 +65,7 @@ def main():
 
             print(f"progress:{c_target} current:{c_state} remaining:{c_time}min")
 
-            if str(c_state)=="ventilation":
+            if str(c_state)=="ventilation" or str(c_state)=="heating":
                 break
             
     elif args.climate==ClimateControl.STOP:
